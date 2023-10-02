@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title > Villa Escolar Distribuidora</title>
+    <link rel="icon" href="/imagenes/logo canva.png" type="image/png" style="font-size: 20px;">
+    <!-- Agregar enlaces a Bootstrap CSS y JavaScript -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+
+<body >
+    <link rel="stylesheet" href="styles.css">
+
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid ">
+            <a style="color: white;" > <img src="/imagenes/logo canva.png" style="height: 46px;"> Villa Escolar Distribuidora  </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="botonesfn" onclick="irAInico()">Inicio </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="botonesfn" onclick="irAComprar()">Productos </button>
+                    </li>
+                </ul>
+                
+                <button id="themeToggle" style="background-color: transparent;">
+                    <span id="themeIcon" class="bi"></span> 
+                </button>
+                <!-- Botón del carrito con contador en la barra principal de navegación -->
+                <button id="verResumenBtn" class="bi bi-handbag position-relative" data-bs-toggle="modal" data-bs-target="#myModal" style="background-color: transparent;">
+                    <span id="contadorCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                        <span class="visually-hidden">productos en el carrito</span>
+                    </span>
+                </button>
+            </div>
+            
+        </div>
+     </nav>
+<section id="Inicios" >
+
+    <div class="container">
+        <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- Configura el intervalo en 3000 ms (3 segundos) -->
+            <div class="carousel-inner">
+                <div class="carousel-item active " style="top: 60px;">
+                    <h1 style="padding-left: 130px;">Ofreciendo los mejores productos a buen precio</h1>
+                    <img src="/imagenes/dep1.jpg" class="d-block mx-auto" alt="Imagen 1">
+                </div>
+                <div class="carousel-item" style="top: 60px;">
+                    <H1 style="padding-left: 170px;">Solo aceptamos efectivo o transferencias</H1>
+                    <img src="/imagenes/dep2.jpg" class="d-block mx-auto" alt="Imagen 2">
+                </div>
+                <div class="carousel-item" style="top: 60px;">
+                    <h1 style="padding-left: 120px;">Pronto estaremos enviando  pedidos a domicilio</h1>
+                    <img src="/imagenes/dep3.jpg" class="d-block mx-auto" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<div class="separador"> </div>
+
+<section id="Compras">
+     
+        
+
+
+    <div class="container">
+        <h1 class="text-center">Nuestros Productos</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="/Productos/AceiteCD.jpeg" class="card-img-top TamañoIMG " alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceite Cada Dia</h5>
+                        <p class="card-text">Aceite Cadaa Dia Girasol de 900ml</p>
+                       
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary agregar" data-producto="Aceite-Cada-Dia">Agregar</button>
+                            <button class="btn btn-outline-danger eliminar" data-producto="Aceite-Cada-Dia">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="/Productos/AceiteCDS.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceite Costa del Sol</h5>
+                        <p class="card-text">Aceite Costa del  Sol de 900ml</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary agregar" data-producto="Aceite-Costa-del-sol">Agregar</button>
+                            <button class="btn btn-outline-danger eliminar" data-producto="Aceite-Costa-del-sol">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="/Productos/AlubiaT.jpeg" class="card-img-top TamañoIMG" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Alubias Tarragona</h5>
+                        <p class="card-text">Paquete de alubias Tarragona de 400g</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary agregar" data-producto="Alubias-Tarragona">Agregar</button>
+                            <button class="btn btn-outline-danger eliminar" data-producto="Alubias-Tarragona">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="/Productos/AzucarLP.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Azucar Los Pupis</h5>
+                        <p class="card-text">Paquete Azucar Los Pupis de 1kg</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary agregar" data-producto="Azucar-Los-Pupis">Agregar</button>
+                            <button class="btn btn-outline-danger eliminar" data-producto="Azucar-Los-Pupis">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card text-center" >
+                    <img src="/Productos/FideosR.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fideos Tallarin Ricatto</h5>
+                        <p class="card-text">Paquete Fideos Tallarin Ricatto de 500g</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary agregar" data-producto="Fideos-Tallarin-Ricatto">Agregar</button>
+                            <button class="btn btn-outline-danger eliminar" data-producto="Fideos-Tallarin-Ricatto">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/GarbanzosT.jpeg" class="card-img-top TamañoIMG " alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Garbanzos Tarragona</h5>
+            <p class="card-text">Paquete Garbanzos Tarragona de 400g</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Garbanzos-Tarragona">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Garbanzos-Tarragona">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/HarinaDL.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Harina 000 Doña Luisa</h5>
+            <p class="card-text">Paquete Harina 000 Doña Luisa de 1kg</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Harina-000-Doña-Luisa">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Harina-000-Doña-Luisa">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/LecheLL.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Leche La Lechera</h5>
+            <p class="card-text">Paquete Leche La Lechera de 800g</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Leche-La-Lechera">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Leche-La-Lechera">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/LecheP.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Leche Purisima</h5>
+            <p class="card-text">Caja Leche Purisima de 1000g</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Leche-Purisima">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Leche-Purisima">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/LecheV.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Leche Vidalac</h5>
+            <p class="card-text">Caja Leche Vidalac de 800g</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Leche-Vidalac">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Leche-Vidalac">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/LentejasM.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Lentejas Monarca</h5>
+            <p class="card-text">Paquete Lentejas Monarca de 400g</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Lentejas-Monarca">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Lentejas-Monarca">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/PolentaCL.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Polenta Campo Lindo</h5>
+            <p class="card-text">Paquete Polenta Campo Lindo de 1kg</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Polenta-Campo-Lindo">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Polenta-Campo-Lindo">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="card text-center">
+        <img src="/Productos/YerbaMateA.jpeg" class="card-img-top TamañoIMG" alt="Producto 2">
+        <div class="card-body">
+            <h5 class="card-title">Yerba Mate Andresito</h5>
+            <p class="card-text">Paquete Yerba Mate Andresito de 1kg</p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary agregar" data-producto="Yerba-Mate-Andresito">Agregar</button>
+                <button class="btn btn-outline-danger eliminar" data-producto="Yerba-Mate-Andresito">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    </div>
+</section>
+            <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Resumen de Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabla de productos en el modal -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaProductos"></tbody>
+                    </table>
+                    <p class="modal-title">Total a Pagar: $<span id="modalTotal">0.00</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="irAComprar()" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button id="compartir-whatsapp" class="btn btn-outline-warning">Enviar Pedido</button>
+                </div>
+              </div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <script src="/logica.js"> 
+                </script>
+
+             </div>
+            </div> 
+</body>
+<div class="separador"> </div>
+<footer style="background: linear-gradient(to bottom, #ffacf5, #ffebb8);">
+    <div class="container ">
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <h3>Contactanos</h3>
+                <p>Dirección: 123 Calle Principal, Ciudad</p>
+                <p class="bi bi-phone">Teléfono: (123) 456-7890</p>
+                <p class="bi bi-envelope-at">Correo Electrónico: info@miempresa.com</p>
+            </div>
+          
+            <div class="col-md-4">
+                <h3>Síguenos en Redes Sociales</h3>
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

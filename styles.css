@@ -1,0 +1,138 @@
+    /* Establecer una altura máxima para el carrusel */
+    #miCarrusel {
+        max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+    }
+
+    /* Establecer que las imágenes se ajusten automáticamente al ancho máximo */
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .separador{
+height: 450px;
+width: 100%;
+    }
+
+    .TamañoIMG{
+        height: 300px;
+        width: 200px;
+     
+    }
+    .bg-custom-color {
+        background-color:  #cc47a2; /* Cambia esto al color que desees */
+        /* Otros estilos que desees aplicar al <nav> */
+    }
+    #colornavyfooter{
+        background-color: #cc47a2;
+    }
+
+    .eliminator{background-color: transparent;
+        border: none;
+        
+        font-size: 24px; /* Tamaño del icono */
+        }
+        .eliminator:hover {
+        color: red; /* Cambia el color al pasar el mouse */
+    }
+
+
+/* Estilo predeterminado para los iconos */
+.social-icon i {
+    font-size: 40px; /* Tamaño del icono */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Cambia el color al hacer hover (por ejemplo, al azul de Facebook) */
+.social-icon:hover i.bi-facebook {
+    color: #1877f2; /* Azul de Facebook */
+}
+
+/* Cambia el color al hacer hover (por ejemplo, al azul de Twitter) */
+.social-icon:hover i.bi-twitter-x {
+    color: #1da1f2; /* Azul de Twitter */
+}
+
+/* Cambia el color al hacer hover (por ejemplo, al rojo de Instagram) */
+.social-icon:hover i.bi-instagram {
+    background-color:  #bc2a8d; /* Rojo de Instagram */
+}
+
+
+    .navbar {
+        background: linear-gradient(to bottom, #ffacf5, #ffebb8);
+    
+    transition: background-color 0.3s ease-in-out; /* Transición suave background-color:#ffacf5; /* Fondo transparente */ 
+    position: fixed; /* Barra de navegación fija */
+    
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+.colornav{color: #bc2a8d;}
+/* Estilos para el tema oscuro */
+.dark-theme {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco o claro */
+}
+
+.botonesfn{background-color: transparent;
+    border: none;
+    
+    font-size: 14px; /* Tamaño del icono */
+    }
+    .botonesfn:hover {
+    color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+/* Estilo para el botón del carrito */
+#verResumenBtn {
+    background-color: transparent;
+    border: none;
+    
+    font-size: 24px; /* Tamaño del icono */
+    margin-right: 10px; /* Espaciado entre los botones */
+}
+
+#verResumenBtn:hover {
+    color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para el botón de cambio de tema */
+#themeToggle {
+    background-color: transparent;
+    border: none;
+    font-size: 24px; /* Tamaño del icono */
+}
+
+#themeToggle:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+}
+.card-img-top {
+    display: block;
+    margin: 0 auto; /* Esto centrará horizontalmente la imagen */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco o claro */
+    padding: 20px; /* Espaciado interior del footer */
+    text-align: center; /* Centrar el texto en el footer */
+}
+
+/* Estilo para los enlaces del footer */
+footer a {
+    color: #fff; /* Color de los enlaces en el footer */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    margin: 0 10px; /* Margen entre los enlaces del footer */
+}
+
+/* Estilo para los iconos de redes sociales en el footer (ejemplo) */
+footer .fab {
+    font-size: 24px; /* Tamaño de los iconos de redes sociales */
+    margin: 0 10px; /* Margen entre los iconos de redes sociales */
+}
+
+.modal-title{
+    color: black;
+}
